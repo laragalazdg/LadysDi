@@ -25,7 +25,7 @@ class Medico
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $apeliido_medico;
+    private $apellido_medico;
 
     public function getId(): ?int
     {
@@ -44,14 +44,14 @@ class Medico
         return $this;
     }
 
-    public function getApeliidoMedico(): ?string
+    public function getApellidoMedico(): ?string
     {
-        return $this->apeliido_medico;
+        return $this->apellido_medico;
     }
 
-    public function setApeliidoMedico(string $apeliido_medico): self
+    public function setApellidoMedico(string $apellido_medico): self
     {
-        $this->apeliido_medico = $apeliido_medico;
+        $this->apellido_medico = $apellido_medico;
 
         return $this;
     }
